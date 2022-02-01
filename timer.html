@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="robots" content="noindex">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Title</title>
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+
+	<!-- build:css assets/css/all.css -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- endbuild -->
+	<!-- build:js assets/js/all.js defer -->
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/script.js"></script>
+	<!-- endbuild -->
+</head>
+<body onload="time()">
+
+    <div class="timer">
+        <div class="container">
+            <span id="t" class="item"></span>
+        </div>
+    </div>
+    
+    <script>
+        timeend= new Date();
+        // IE и FF по разному отрабатывают getYear()
+        timeend= new Date('Oct 8 2021 00:00:00');
+        function time() {
+            today = new Date();
+            today = Math.floor((timeend-today)/1000);
+            tsec=today%60; today=Math.floor(today/60); if(tsec<10)tsec='0'+tsec;
+            tmin=today%60; today=Math.floor(today/60); if(tmin<10)tmin='0'+tmin;
+            thour=today%24; today=Math.floor(today/24);
+            timestr=today +" days "+ thour+" hours "+tmin+" minutes "+tsec+" seconds";
+            document.getElementById('t').innerHTML=timestr;
+            window.setTimeout("time()",1000);
+        }
+    </script>
+</body>
+</html>

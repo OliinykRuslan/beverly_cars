@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Beverly Hills Car Club</title>
+	<!-- <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"> -->
+
+	<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet"> -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Grand+Hotel&display=swap" rel="stylesheet">
+
+
+
+	<!-- build:css assets/css/all.css -->
+	<link rel="stylesheet" href="assets/css/plugins.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- endbuild -->
+	<!-- build:js assets/js/all.js defer -->
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/script.js"></script>
+	<!-- endbuild -->
+
+	
+</head>
+<body>
+	<header class="header">
+		<div class="container mx-auto">
+			<div class="inner-wrap">
+				<a href="/" class="logo">
+					<img src="assets/images/cars-logo.svg" alt="logo" />
+				</a>
+				<nav class="nav">
+					<ul class="head-list toggleMenu">
+						<li>
+							<a href=".rarity" class="jsScrollTo">Rarity</a>
+						</li>
+						<li>
+							<a href=".about" class="jsScrollTo">About</a>
+						</li>
+						<li>
+							<a href=".roadmap" class="jsScrollTo">RoadMap</a>
+						</li>
+						<li>
+							<a href=".showroom" class="jsScrollTo">Showroom</a>
+						</li>
+						<li>
+							<a href=".club" class="jsScrollTo">Club</a>
+						</li>
+					</ul>
+					<button class="navbar-toggler showMenu">
+						<span class="header_btn">
+							<span class="bit-1"></span>
+							<span class="bit-2"></span>
+							<span class="bit-3"></span>
+						</span>
+					</button>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<section class="hero">
+		<div class="container mx-auto">
+			<div class="inner-wrap">
+				<div class="text-holder">
+					<h1 class="title">
+						<picture>
+							<source srcset="assets/images/webp/hero-title.webp" type="image/webp">
+							<source srcset="assets/images/hero-title.png" type="image/jpeg"> 
+							<img src="assets/images/hero-title.png" alt="hero-title">
+						</picture>
+					</h1>
+					<p class="text">8,137 hand drawn non fungible tokens representing the most desirable classic cars in automobile history. Only on Solana.</p>
+					<div class="btn-holder">
+						<a href="https://discord.com/invite/eUABrpK3xT" class="btn btn-white" target="_blank">
+							<span>Join our Discord</span>
+						</a>
+						<a href="https://twitter.com/bevhillscarclub" class="btn btn-blue" target="_blank">
+							<span>Stay tuned on Twitter</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="img-holder">
+					<div class="house-img">
+						<picture>
+							<source srcset="assets/images/webp/hero-img.webp" type="image/webp" class="wow bounceInDown" data-wow-delay="2s">
+							<source srcset="assets/images/hero-img.png" type="image/jpeg" class="wow bounceInDown" data-wow-delay="2s"> 
+							<img src="assets/images/hero-img.png" alt="hero-img" class="wow bounceInDown" data-wow-delay="2s">
+						</picture>
+					</div>
+					<div class="car-img wow slideInRight" data-wow-delay="1s">
+						<picture>
+							<source srcset="assets/images/webp/hero-car.webp" type="image/webp">
+							<source srcset="assets/images/hero-car.png" type="image/jpeg"> 
+							<img src="assets/images/hero-car.png" alt="hero-car">
+						</picture>
+
+						<!-- circle -->
+						<div>
+							<picture>
+								<source srcset="assets/images/webp/ferrari_adobespark.webp" type="image/webp" class="circle-front animated wow rotateInCircle" data-wow-delay="1s">
+								<source srcset="assets/images/ferrari_adobespark.png" type="image/jpeg" class="circle-front animated wow rotateInCircle" data-wow-delay="1s"> 
+								<img src="assets/images/ferrari_adobespark.png" alt="circle-car" class="circle-front animated wow rotateInCircle" data-wow-delay="1s">
+							</picture>
+						</div>
+						<div>
+							<picture>
+								<source srcset="assets/images/webp/ferrari_adobespark.webp" type="image/webp" class="circle-back animated wow rotateInCircle" data-wow-delay="1s">
+								<source srcset="assets/images/ferrari_adobespark.png" type="image/jpeg" class="circle-back animated wow rotateInCircle" data-wow-delay="1s"> 
+								<img src="assets/images/ferrari_adobespark.png" alt="circle-car" class="circle-back animated wow rotateInCircle" data-wow-delay="1s">
+							</picture>
+						</div>
+						
+					</div>
+					<div class="subtitle-holder">
+						<div class="timer-wrap">
+
+							<div class="timer">
+								<span id="days"></span>d:<span id="hours"></span>h:<span id="minutes"></span>m:<span id="seconds"></span>s
+							</div>
+							<h5 class="headline is-hide">finish</h5>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="subscribe">
+		<div class="container mx-auto">
+			<h2 class="title">Get access to launch updates,
+				giveaways, merch, and more.</h2>
+
+			<!-- Begin Mailchimp Signup Form -->
+			<div id="mc_embed_signup">
+				<form action="https://beverlyhillscarclub.us5.list-manage.com/subscribe/post?u=2db474a50ce316418d16a9d49&amp;id=2b2424877e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<div id="mc_embed_signup_scroll" class="form-inner">
+						<div class="mc-field-group">
+							<div class="form-group">
+								<input type="email" value="" name="EMAIL" class="form-control required email" id="mce-EMAIL" placeholder="Email">
+							</div>
+						</div>
+						<div class="form-group">
+							<button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn">Subscribe</button>
+						</div>
+						<div id="mce-responses" class="form-group-messages">
+							<div class="response" id="mce-error-response" style="display:none"></div>
+							<div class="response" id="mce-success-response" style="display:none"></div>
+						</div>
+						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_2db474a50ce316418d16a9d49_2b2424877e" tabindex="-1" value=""></div>
+					</div>
+				</form>
+			</div>
+			<!--End mc_embed_signup-->
+
+		</div>
+	</section>
+
+	<section class="rarity">
+		<div class="container mx-auto">
+			<div class="rarity__nav">
+				<h2 class="rarity__nav-title">Rarity Chart</h2>
+				<div class="rarity__nav-filter">
+					<ul>
+						<li>
+							<button class="is-active" type="button" data-filter="model">Model</button>
+						</li>
+						<li>
+							<button type="button" data-filter="background">Background</button>
+						</li>
+						<li>
+							<button type="button" data-filter="exterior">Exterior</button>
+						</li>
+						<li>
+							<button type="button" data-filter="interior">Interior</button>
+						</li>
+						<li>
+							<button type="button" data-filter="tire_smoke">Tire Smoke</button>
+						</li>
+						<li>
+							<button type="button" data-filter="exhaust_flames">Exhaust Flames</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="rarity__main rarityJs">
+				<div class="item-wrap-model is-active" data-item="model">
+					<div class="item orange item-1" >
+						<div class="card-header">
+							<p class="year">1964</p>
+							<p class="brand">Aston Martin<br> 
+								DB5</p>
+						</div>
+						<div class="img-holder">
+							<picture>
+								<source srcset="assets/images/webp/rarity-1.webp" type="image/webp">
+								<source srcset="assets/images/rarity-1.png" type="image/jpeg"> 
+								<img src="assets/images/rarity-1.png" alt="rarity-1-car">
+							</picture>
+						</div>
+						<div class="card-footer">
+							<p class="club-name">Quantity Produced</p>
+							<p class="count">1061 Units <span>(13%)</span></p>
+						</div>
+					</div>
+					<div class="item green item-1">
+						<div class="card-header">
+							<p class="year">1962</p>
+							<p class="brand">Ford Shelby<br> 
+									Cobra</p>
+						</div>
+						<div class="img-holder">
+							<picture>
+								<source srcset="assets/images/webp/rarity-2.webp" type="image/webp">
+								<source srcset="assets/images/rarity-2.png" type="image/jpeg"> 
+								<img src="assets/images/rarity-2.png" alt="rarity-2-car">
+							</picture>
+						</div>
+						<div class="card-footer">
+							<p class="club-name">Quantity Produced</p>
+							<p class="count">1000 Units <span>(12%)</span></p>
+						</div>
+					</div>
+					<div class="item pink item-1">
+						<div class="card-header">
+							<p class="year">1970</p>
+							<p class="brand">Ford <br> 
+								Mustang Boss 429</p>
+						</div>
+						<div class="img-holder">
+							<picture>
+								<source srcset="assets/images/webp/rarity-3.webp" type="image/webp">
+								<source srcset="assets/images/rarity-3.png" type="image/jpeg"> 
+								<img src="assets/images/rarity-3.png" alt="rarity-3-car">
+							</picture>
+						</div>
+						<div class="card-footer">
+							<p class="club-name">Quantity Produced</p>
+							<p class="count">1350 Units <span>(17%)</span></p>
+						</div>
+					</div>
+					<div class="item blue item-1">
+						<div class="card-header">
+							<p class="year">1954 </p>
+							<p class="brand">Mercedes <br> 
+								300SL</p>
+						</div>
+						<div class="img-holder">
+							<picture>
+								<source srcset="assets/images/webp/rarity-4.webp" type="image/webp">
+								<source srcset="assets/images/rarity-4.png" type="image/jpeg"> 
+								<img src="assets/images/rarity-4.png" alt="rarity-4-car">
+							</picture>
+						</div>
+						<div class="card-footer">
+							<p class="club-name">Quantity Produced</p>
+							<p class="count">1402 Units <span>(17%)</span></p>
+						</div>
+					</div>
+	
+					<div class="item green item-2">
+						<div class="card-header">
+							<p class="year">1975</p>
+							<p class="brand">Porsche <br> 
+								930 Turbo</p>
+						</div>
+						<div class="img-holder">
+							<picture>
+								<source srcset="assets/images/webp/rarity-5.webp" type="image/webp">
+								<source srcset="assets/images/rarity-5.png" type="image/jpeg"> 
+								<img src="assets/images/rarity-5.png" alt="rarity-5-car">
+							</picture>
+						</div>
+						<div class="card-footer">
+							<p class="club-name">Quantity Produced</p>
+							<p class="count">861 Units <span>(11%)</span></p>
+						</div>
+					</div>
+					<div class="item orange item-2">
+						<div class="card-header">
+							<p class="year">1986</p>
+							<p class="brand">Mercedes<br>
+								G - Wagon </p>
+						</div>
+						<div class="img-holder">
+							<picture>
+								<source srcset="assets/images/webp/rarity-6.webp" type="image/webp">
+								<source srcset="assets/images/rarity-6.png" type="image/jpeg"> 
+								<img src="assets/images/rarity-6.png" alt="rarity-6-car">
+							</picture>
+						</div>
+						<div class="card-footer">
+							<p class="club-name">Quantity Produced</p>
+							<p class="count">429 Units <span>(5%)</span></p>
+						</div>
+					</div>
+					<div class="item blue item-2">
+						<div class="card-header">
+							<p class="year">2004</p>
+							<p class="brand">Porsche <br>
+								Carrera GT</p>
+						</div>
+						<div class="img-holder">
+							<picture>
+								<source srcset="assets/images/webp/rarity-8.webp" type="image/webp">
+								<source srcset="assets/images/rarity-8.png" type="image/jpeg"> 
+								<img src="assets/images/rarity-8.png" alt="rarity-8-car">
+							</picture>
+						</div>
+						<div class="card-footer">
+							<p class="club-name">Quantity Produced</p>
+							<p class="count">322 Units <span>(5%)</span></p>
+						</div>
+					</div>
+					<div class="item orange item-2">
+						<div class="card-header">
+							<p class="year">1974</p>
+							<p class="brand">Lamborghnini <br> 
+								Countach</p>
+						</div>
+						<div class="img-holder lambo-img">
+							<picture>
+								<source srcset="assets/images/webp/rarity-7.webp" type="image/webp">
+								<source srcset="assets/images/rarity-7.png" type="image/jpeg"> 
+								<img src="assets/images/rarity-7.png" alt="rarity-7-car">
+							</picture>
+						</div>
+						<div class="card-footer">
+							<p class="club-name">Quantity Produced</p>
+							<p class="count">401 Units <span>(4%)</span></p>
+						</div>
+					</div>
+					<div class="item pink item-2">
+						<div class="card-header">
+							<p class="year">1987</p>
+							<p class="brand">Ferrari <br> 
+								F40</p>
+						</div>
+						<div class="img-holder ferr-img">
+							<picture>
+								<source srcset="assets/images/webp/rarity-9.webp" type="image/webp">
+								<source srcset="assets/images/rarity-9.png" type="image/jpeg"> 
+								<img src="assets/images/rarity-9.png" alt="rarity-9-car">
+							</picture>
+						</div>
+						<div class="card-footer">
+							<p class="club-name">Quantity Produced</p>
+							<p class="count">1272 Units <span>(16%)</span></p>
+						</div>
+					</div>
+				</div>
+
+				<!-- background -->
+				<div class="item-wrap-bg" data-item="background">
+					<div>
+						<div class="item orange item-1">
+							<picture>
+								<source srcset="assets/images/webp/backgrounds/backgrounds-08.webp" type="image/webp">
+								<source srcset="assets/images/backgrounds/backgrounds-08.png" type="image/jpeg"> 
+								<img src="assets/images/backgrounds/backgrounds-08.png" alt="backgrounds-08">
+							</picture>
+							<div class="card-footer">
+								<p class="club-name">Peach</p>
+								<p class="count">10%</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="item orange item-1">
+							<picture>
+								<source srcset="assets/images/webp/backgrounds/backgrounds-12.webp" type="image/webp">
+								<source srcset="assets/images/backgrounds/backgrounds-12.png" type="image/jpeg"> 
+								<img src="assets/images/backgrounds/backgrounds-12.png" alt="backgrounds-12">
+							</picture>
+							<div class="card-footer">
+								<p class="club-name">White</p>
+								<p class="count">10%</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="item orange item-1">
+							<picture>
+								<source srcset="assets/images/webp/backgrounds/backgrounds-10.webp" type="image/webp">
+								<source srcset="assets/images/backgrounds/backgrounds-10.png" type="image/jpeg"> 
+								<img src="assets/images/backgrounds/backgrounds-10.png" alt="backgrounds-10">
+							</picture>
+							<div class="card-footer">
+								<p class="club-name">Mint Green</p>
+								<p class="count">9%</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="item orange item-1">
+							<picture>
+								<source srcset="assets/images/webp/backgrounds/backgrounds-11.webp" type="image/webp">
+								<source srcset="assets/images/backgrounds/backgrounds-11.png" type="image/jpeg"> 
+								<img src="assets/images/backgrounds/backgrounds-11.png" alt="backgrounds-11">
+							</picture>
+							<div class="card-footer">
+								<p class="club-name">Sage Green</p>
+								<p class="count">9%</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="item orange item-1">
+							<picture>
+								<source srcset="assets/images/webp/backgrounds/backgrounds-13.webp" type="image/webp">
+								<source srcset="assets/images/backgrounds/backgrounds-13.png" type="image/jpeg"> 
+								<img src="assets/images/backgrounds/backgrounds-13.png" alt="backgrounds-13">
+							</picture>
+							<div class="card-footer">
+								<p class="club-name">Crimson</p>
+								<p class="count">9%</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="item orange item-1">
+							<picture>
+								<source srcset="assets/images/webp/backgrounds/backgrounds-14.webp" type="image/webp">
+								<source srcset="assets/images/backgrounds/backgrounds-14.png" type="image/jpeg"> 
+								<img src="assets/images/backgrounds/backgrounds-14.png" alt="backgrounds-14">
+							</picture>
+							<div class="card-footer">
+								<p class="club-name">Chocolate</p>
+								<p class="count">9%</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="item orange item-1">
+							<picture>
+								<source srcset="assets/images/webp/backgrounds/backgrounds-15.webp" type="image/webp">
+								<source srcset="assets/images/backgrounds/backgrounds-15.png" type="image/jpeg"> 
+								<img src="assets/images/backgrounds/backgrounds-15.png" alt="backgrounds-15">
+							</picture>
+							<div class="card-footer">
+								<p class="club-name">Bubblegum</p>
+								<p class="count">9%</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="item orange item-1">
+							<picture>
+								<source srcset="assets/images/webp/backgrounds/backgrounds-01.webp" type="image/webp">
+								<source srcset="assets/images/backgrounds/backgrounds-01.png" type="image/jpeg"> 
+								<img src="assets/images/backgrounds/backgrounds-01.png" alt="backgrounds-01">
+							</picture>
+							<div class="card-footer">
+								<p class="club-name">Beverly Hills hotel</p>
+								<p class="count">5%</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="item orange item-1">
+							<picture>
+								<source srcset="assets/images/webp/backgrounds/backgrounds-02.webp" type="image/webp">
+								<source srcset="assets/images/backgrounds/backgrounds-02.png" type="image/jpeg"> 
+								<img src="assets/images/backgrounds/backgrounds-02.png" alt="backgrounds-02">
+							</picture>
+							<div class="card-footer">
+								<p class="club-name">Downtown Los Angeles</p>
+								<p class="count">5%</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="item orange item-1">
+							<picture>
+								<source srcset="assets/images/webp/backgrounds/backgrounds-03.webp" type="image/webp">
+								<source srcset="assets/images/backgrounds/backgrounds-03.png" type="image/jpeg"> 
+								<img src="assets/images/backgrounds/backgrounds-03.png" alt="backgrounds-03">
+							</picture>
+							<div class="card-footer">
+								<p class="club-name">Flames</p>
+								<p class="count">5%</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="item orange item-1">
+							<picture>
+								<source srcset="assets/images/webp/backgrounds/backgrounds-04.webp" type="image/webp">
+								<source srcset="assets/images/backgrounds/backgrounds-04.png" type="image/jpeg"> 
+								<img src="assets/images/backgrounds/backgrounds-04.png" alt="backgrounds-04">
+							</picture>
+							<div class="card-footer">
+								<p class="club-name">Hollywood Sign</p>
+								<p class="count">5%</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="item orange item-1">
+							<picture>
+								<source srcset="assets/images/webp/backgrounds/backgrounds-07.webp" type="image/webp">
+								<source srcset="assets/images/backgrounds/backgrounds-07.png" type="image/jpeg"> 
+								<img src="assets/images/backgrounds/backgrounds-07.png" alt="backgrounds-07">
+							</picture>
+							<div class="card-footer">
+								<p class="club-name">Pacific Coast Highway</p>
+								<p class="count">5%</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="item orange item-1">
+							<picture>
+								<source srcset="assets/images/webp/backgrounds/backgrounds-06.webp" type="image/webp">
+								<source srcset="assets/images/backgrounds/backgrounds-06.png" type="image/jpeg"> 
+								<img src="assets/images/backgrounds/backgrounds-06.png" alt="backgrounds-06">
+							</picture>
+							<div class="card-footer">
+								<p class="club-name">Moon</p>
+								<p class="count">4%</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="item orange item-1">
+							<picture>
+								<source srcset="assets/images/webp/backgrounds/backgrounds-05.webp" type="image/webp">
+								<source srcset="assets/images/backgrounds/backgrounds-05.png" type="image/jpeg"> 
+								<img src="assets/images/backgrounds/backgrounds-05.png" alt="backgrounds-05">
+							</picture>
+							<div class="card-footer">
+								<p class="club-name">Mars</p>
+								<p class="count">3%</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="item orange item-1">
+							<picture>
+								<source srcset="assets/images/webp/backgrounds/backgrounds-09.webp" type="image/webp">
+								<source srcset="assets/images/backgrounds/backgrounds-09.png" type="image/jpeg"> 
+								<img src="assets/images/backgrounds/backgrounds-09.png" alt="backgrounds-09">
+							</picture>
+							<div class="card-footer">
+								<p class="club-name">Island time</p>
+								<p class="count">3%</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- exterior -->
+				<div class="item-wrap" data-item="exterior">
+					<div class="item item-1">
+						<div class="img-holder">
+							<picture>
+								<source srcset="assets/images/webp/exterior/jet-black.webp" type="image/webp">
+								<source srcset="assets/images/exterior/jet-black.png" type="image/jpeg"> 
+								<img src="assets/images/exterior/jet-black.png" alt="exterior">
+							</picture>
+						</div>
+						<div class="card-footer">
+							<p class="club-name">Jet Black</p>
+							<p class="count">15%</p>
+						</div>
+					</div>
+					<div class="item item-1">
+						<div class="img-holder">
+							<picture>
+								<source srcset="assets/images/webp/exterior/perl-white.webp" type="image/webp">
+								<source srcset="assets/images/exterior/perl-white.png" type="image/jpeg"> 
+								<img src="assets/images/exterior/perl-white.png" alt="exterior">
+							</picture>
+						</div>
+						<div class="card-footer">
+							<p class="club-name">Pearl White</p>
+							<p class="count">15%</p>
+						</div>
+					</div>
+					<div class="item item-1">
+						<div class="img-holder">
+							<picture>
+								<source srcset="assets/images/webp/exterior/sterling-grey.webp" type="image/webp">
+								<source srcset="assets/images/exterior/sterling-grey.png" type="image/jpeg"> 
+								<img src="assets/images/exterior/sterling-grey.png" alt="exterior">
+							</picture>
+						</div>
+						<div class="card-footer">
+							<p class="club-name">Sterling Grey</p>
+							<p class="count">15%</p>
+						</div>
+					</div>
+					<div class="item item-1">
+						<div class="img-holder">
+							<picture>
+								<source srcset="assets/images/webp/exterior/baby-blue.webp" type="image/webp">
+								<source srcset="assets/images/exterior/baby-blue.png" type="image/jpeg"> 
+								<img src="assets/images/exterior/baby-blue.png" alt="exterior">
+							</picture>
+						</div>
+						<div class="card-footer">
+							<p class="club-name">Baby Blue</p>
+							<p class="count">14%</p>
+						</div>
+					</div>
+					<div class="item item-1">
+						<div class="img-holder">
+							<picture>
+								<source srcset="assets/images/webp/exterior/candy-red.webp" type="image/webp">
+								<source srcset="assets/images/exterior/candy-red.png" type="image/jpeg"> 
+								<img src="assets/images/exterior/candy-red.png" alt="exterior">
+							</picture>
+						</div>
+						<div class="card-footer">
+							<p class="club-name">Candy Red</p>
+							<p class="count">13%</p>
+						</div>
+					</div>
+					<div class="item item-1">
+						<div class="img-holder">
+							<picture>
+								<source srcset="assets/images/webp/exterior/lime-green.webp" type="image/webp">
+								<source srcset="assets/images/exterior/lime-green.png" type="image/jpeg"> 
+								<img src="assets/images/exterior/lime-green.png" alt="exterior">
+							</picture>
+						</div>
+						<div class="card-footer">
+							<p class="club-name">Lime Green</p>
+							<p class="count">13%</p>
+						</div>
+					</div>
+					<div class="item item-1">
+						<div class="img-holder">
+							<picture>
+								<source srcset="assets/images/webp/exterior/black-flames.webp" type="image/webp">
+								<source srcset="assets/images/exterior/black-flames.png" type="image/jpeg"> 
+								<img src="assets/images/exterior/black-flames.png" alt="exterior">
+							</picture>
+						</div>
+						<div class="card-footer">
+							<p class="club-name">Flames</p>
+							<p class="count">5%</p>
+						</div>
+					</div>
+					<div class="item item-1">
+						<div class="img-holder">
+							<picture>
+								<source srcset="assets/images/webp/exterior/camo.webp" type="image/webp">
+								<source srcset="assets/images/exterior/camo.png" type="image/jpeg"> 
+								<img src="assets/images/exterior/camo.png" alt="exterior">
+							</picture>
+						</div>
+						<div class="card-footer">
+							<p class="club-name">Chicago Camo</p>
+							<p class="count">5%</p>
+						</div>
+					</div>
+					<div class="item item-1">
+						<div class="img-holder">
+							<picture>
+								<source srcset="assets/images/webp/exterior/two-tone.webp" type="image/webp">
+								<source srcset="assets/images/exterior/two-tone.png" type="image/jpeg"> 
+								<img src="assets/images/exterior/two-tone.png" alt="exterior">
+							</picture>
+						</div>
+						<div class="card-footer">
+							<p class="club-name">Two-Tone</p>
+							<p class="count">5%</p>
+						</div>
+					</div>
+				</div>
+				
+				<!-- interior -->
+				<div class="item-wrap" data-item="interior">
+					<div class="item item-1" >
+						<div class="img-holder lambo-img">
+							<picture>
+								<source srcset="assets/images/webp/interior/ash.webp" type="image/webp">
+								<source srcset="assets/images/interior/ash.png" type="image/jpeg"> 
+								<img src="assets/images/interior/ash.png" alt="interior">
+							</picture>
+						</div>
+						<div class="card-footer">
+							<p class="club-name">Ash Leather</p>
+							<p class="count">25%</p>
+						</div>
+					</div>
+					<div class="item item-1">
+						<div class="img-holder lambo-img">
+							<picture>
+								<source srcset="assets/images/webp/interior/palomino.webp" type="image/webp">
+								<source srcset="assets/images/interior/palomino.png" type="image/jpeg"> 
+								<img src="assets/images/interior/palomino.png" alt="interior">
+							</picture>
+						</div>
+						<div class="card-footer">
+							<p class="club-name">Palomino Leather</p>
+							<p class="count">25%</p>
+						</div>
+					</div>
+					<div class="item item-1">
+						<div class="img-holder lambo-img">
+							<picture>
+								<source srcset="assets/images/webp/interior/bone.webp" type="image/webp">
+								<source srcset="assets/images/interior/bone.png" type="image/jpeg"> 
+								<img src="assets/images/interior/bone.png" alt="interior">
+							</picture>
+						</div>
+						<div class="card-footer">
+							<p class="club-name">Bone Leather</p>
+							<p class="count">15%</p>
+						</div>
+					</div>
+					<div class="item item-1">
+						<div class="img-holder lambo-img">
+							<picture>
+								<source srcset="assets/images/webp/interior/cherry.webp" type="image/webp">
+								<source srcset="assets/images/interior/cherry.png" type="image/jpeg"> 
+								<img src="assets/images/interior/cherry.png" alt="interior">
+							</picture>
+						</div>
+						<div class="card-footer">
+							<p class="club-name">Cherry Leather</p>
+							<p class="count">15%</p>
+						</div>
+					</div>
+					<div class="item item-1">
+						<div class="img-holder lambo-img">
+							<picture>
+								<source srcset="assets/images/webp/interior/cobalt.webp" type="image/webp">
+								<source srcset="assets/images/interior/cobalt.png" type="image/jpeg"> 
+								<img src="assets/images/interior/cobalt.png" alt="interior">
+							</picture>
+						</div>
+						<div class="card-footer">
+							<p class="club-name">Ultramarine</p>
+							<p class="count">10%</p>
+						</div>
+					</div>
+					<div class="item item-1">
+						<div class="img-holder lambo-img">
+							<picture>
+								<source srcset="assets/images/webp/interior/crimson.webp" type="image/webp">
+								<source srcset="assets/images/interior/crimson.png" type="image/jpeg"> 
+								<img src="assets/images/interior/crimson.png" alt="interior">
+							</picture>
+						</div>
+						<div class="card-footer">
+							<p class="club-name">Rasberry Leather</p>
+							<p class="count">10%</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- tire_smoke -->
+				<div class="item-wrap" data-item="tire_smoke">
+					<div class="item item-1">
+						<div class="img-holder ferr-img">
+							<picture>
+								<source srcset="assets/images/webp/tire_smoke/smoke-classic.webp" type="image/webp">
+								<source srcset="assets/images/tire_smoke/smoke-classic.png" type="image/jpeg"> 
+								<img src="assets/images/tire_smoke/smoke-classic.png" alt="tire_smoke">
+							</picture>
+						</div>
+						<div class="card-footer">
+							<p class="club-name">Classic Tire Smoke</p>
+							<p class="count">32%</p>
+						</div>
+					</div>
+					<div class="item item-1">
+						<div class="img-holder ferr-img">
+							<picture>
+								<source srcset="assets/images/webp/tire_smoke/smoke-pink.webp" type="image/webp">
+								<source srcset="assets/images/tire_smoke/smoke-pink.png" type="image/jpeg"> 
+								<img src="assets/images/tire_smoke/smoke-pink.png" alt="tire_smoke">
+							</picture>
+						</div>
+						<div class="card-footer">
+							<p class="club-name">Bubblegum Tire Smoke</p>
+							<p class="count">24%</p>
+						</div>
+					</div>
+					<div class="item item-1">
+						<div class="img-holder ferr-img">
+							<picture>
+								<source srcset="assets/images/webp/tire_smoke/smoke-no.webp" type="image/webp">
+								<source srcset="assets/images/tire_smoke/smoke-no.png" type="image/jpeg"> 
+								<img src="assets/images/tire_smoke/smoke-no.png" alt="tire_smoke">
+							</picture>
+						</div>
+						<div class="card-footer">
+							<p class="club-name">No Tire Smoke</p>
+							<p class="count">20%</p>
+						</div>
+					</div>
+					<div class="item item-1">
+						<div class="img-holder ferr-img">
+							<picture>
+								<source srcset="assets/images/webp/tire_smoke/smoke-mustard.webp" type="image/webp">
+								<source srcset="assets/images/tire_smoke/smoke-mustard.png" type="image/jpeg"> 
+								<img src="assets/images/tire_smoke/smoke-mustard.png" alt="tire_smoke">
+							</picture>
+						</div>
+						<div class="card-footer">
+							<p class="club-name">Butterscotch Tire Smoke</p>
+							<p class="count">12%</p>
+						</div>
+					</div>
+					<div class="item item-1">
+						<div class="img-holder ferr-img">
+							<picture>
+								<source srcset="assets/images/webp/tire_smoke/smoke-olive.webp" type="image/webp">
+								<source srcset="assets/images/tire_smoke/smoke-olive.png" type="image/jpeg"> 
+								<img src="assets/images/tire_smoke/smoke-olive.png" alt="tire_smoke">
+							</picture>
+						</div>
+						<div class="card-footer">
+							<p class="club-name">Olive Tire Smoke</p>
+							<p class="count">12%</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- exhaust_flames -->
+				<div class="item-wrap" data-item="exhaust_flames">
+					<div class="item item-1">
+						<div class="img-holder">
+							<picture>
+								<source srcset="assets/images/webp/exhuast_flames/babyblue_no_flame.webp" type="image/webp">
+								<source srcset="assets/images/exhuast_flames/babyblue_no_flame.png" type="image/jpeg"> 
+								<img src="assets/images/exhuast_flames/babyblue_no_flame.png" alt="exhuast_flames">
+							</picture>
+						</div>
+						<div class="card-footer">
+							<p class="club-name">No Flame</p>
+							<p class="count">65%</p>
+						</div>
+					</div>
+					<div class="item item-1">
+						<div class="img-holder">
+							<picture>
+								<source srcset="assets/images/webp/exhuast_flames/babyblue_flame.webp" type="image/webp">
+								<source srcset="assets/images/exhuast_flames/babyblue_flame.png" type="image/jpeg"> 
+								<img src="assets/images/exhuast_flames/babyblue_flame.png" alt="exhuast_flames">
+							</picture>
+						</div>
+						<div class="card-footer">
+							<p class="club-name">Flames</p>
+							<p class="count">35%</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<div class="about">
+		<div class="container mx-auto">
+			<h2 class="title">About</h2>
+			<div class="text-holder">
+				<p>Thousands of the rarest, most beautiful automobiles in the world lay waste in private garages with nobody to see or drive them. </p>
+				<p>Why?  Because cars are investments and mileage means depreciation. We’re bringing classic cars back to the masses by building and storing our collection on the Solana blockchain–– with ownership and royalty rights. This allows investors to buy, sell, trade, and view classic automobiles with other investors and enthusiasts from around the world.</p>
+				<p>Somewhere in a secure, top-secret Beverly Hills garage, our team has minted hand-drawn tokens for 9 of the rarest and tasteful classic cars in automotive history. To maintain each vehicle's value and exclusivity, we’ve limited each car’s NFT production to the real quantity produced by its respective maker. Club members recieve exclusive rights to their non-fungible automobile along with merchandise and other member benefits.</p>
+			</div>
+			<div class="img-holder">
+				<div class="inner-img wow slideInLeft" data-wow-delay="0.5s">
+					<picture>
+						<source srcset="assets/images/webp/about_car.webp" type="image/webp">
+						<source srcset="assets/images/about_car.png" type="image/jpeg"> 
+						<img src="assets/images/about_car.png" alt="about_car">
+					</picture>
+
+					<!-- circle -->
+					<div>
+						<img src="assets/images/blackeagle_circle.png" alt="circle-car" class="circle-front animated wow rotReversCircle" data-wow-delay="0.5s" />
+					</div>
+					<div>
+						<div>
+							<img src="assets/images/blackeagle_circle.png" alt="circle-car" class="circle-back circle-back-2 animated wow rotReversCircleBack" data-wow-delay="2.5s" />
+							<img src="assets/images/blackeagle_circle.png" alt="circle-car" class="circle-back-1 circle-back animated wow rotReversCircle" data-wow-delay="0.5s" />
+						</div>
+						
+						<img src="assets/images/smoke.png" alt="circle-car" class="smoke-bg animated wow smokeCirce" data-wow-delay="2.5s"/>
+					</div>
+
+				</div>
+				
+				<picture>
+					<source srcset="assets/images/webp/about-logo.webp" type="image/webp" class="logo">
+					<source srcset="assets/images/about-logo.png" type="image/jpeg" class="logo"> 
+					<img src="assets/images/about-logo.png" alt="about-logo" class="logo">
+				</picture>
+			</div>
+		</div>
+	</div>
+
+	<section class="roadmap">
+		<div class="container mx-auto">
+			<div class="inner-wrap">
+				<div class="img-holder">
+					<picture>
+						<source srcset="assets/images/webp/automat.webp" type="image/webp">
+						<source srcset="assets/images/automat.png" type="image/jpeg"> 
+						<img src="assets/images/automat.png" alt="automat">
+					</picture>
+				</div>
+				<div class="text-holder">
+					<h2 class="title">Roadmap</h2>
+					<ul class="roadmap-list">
+						<li>P - Pre Sale on Discord.</li>
+						<li>R - Release NFT’s to the general public.</li>
+						<li>N - NFT marketplaces list Beverly Hills Car Clubs tokens.</li>
+						<li>D - Drop exclusive merch for club members.</li>
+						<li>S - Send Die-Cast Models of each NFT to owners.</li>
+						<li>+/- Beverly Hills Car Club Melrose Ave. Pop-Up</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="showroom">
+		<div class="container mx-auto">
+			<div class="inner-wrap">
+				<h2 class="title">Showroom</h2>
+				<p class="text">Connect to view your vehicles,</p>
+				<a href="#" class="btn">Connect your solana wallet</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="club">
+		<div class="container mx-auto">
+			<div class="inner-wrap">
+				<div class="text-holder">
+					<h3 class="title">The Club </h3>
+					<p>Members-only community. Coming soon.</p>
+					<a href="#" class="btn">Connect your solana wallet</a>
+				</div>
+				<div class="img-holder">
+					<div class="img-item wow slideInRight" data-wow-delay="0s" alt="blackeagle_1">
+						<img src="assets/images/blackeagle_1.png" class="car-1" />
+
+						<img src="assets/images/club-circle-1.png" alt="circle-car" class="circle-front animated wow rotateInCircle" data-wow-delay="0s" />
+						<img src="assets/images/club-circle-1.png" alt="circle-car" class="circle-back animated wow rotateInCircle" data-wow-delay="0s" />
+					</div>
+
+					<div class="img-item-2 wow slideInRight" data-wow-delay="1s" alt="blackeagle_2">
+						<img src="assets/images/blackeagle_2.png" class="car-2" />
+
+						<img src="assets/images/ferrari_adobespark.png" alt="circle-car" class="circle-front animated wow rotateInCircle" data-wow-delay="1s" />
+						<img src="assets/images/ferrari_adobespark.png" alt="circle-car" class="circle-back animated wow rotateInCircle" data-wow-delay="1s" />
+					</div>
+
+					<div class="img-item-3 wow slideInRight" data-wow-delay="2s" alt="blackeagle_3">
+						<img src="assets/images/blackeagle_3.png" class="car-3" />
+
+						<img src="assets/images/blackeagle_circle.png" alt="circle-car" class="circle-front animated wow rotateInCircle" data-wow-delay="2s" />
+						<img src="assets/images/blackeagle_circle.png" alt="circle-car" class="circle-back animated wow rotateInCircle" data-wow-delay="2s" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<div class="outcome">
+		<div class="container mx-auto">
+			<picture>
+				<source srcset="assets/images/webp/outcome-logo.webp" type="image/webp">
+				<source srcset="assets/images/outcome-logo.png" type="image/jpeg"> 
+				<img src="assets/images/outcome-logo.png" alt="outcome-logo">
+			</picture>
+			<p class="text">8,137 hand drawn non fungible tokens representing the most desirable classic cars in automobile history.</p>
+			<div class="btn-holder">
+				<a href="https://discord.com/invite/eUABrpK3xT" class="btn btn-white" target="_blank">
+					Join our Discord
+				</a>
+				<a href="https://twitter.com/bevhillscarclub" class="btn btn-blue" target="_blank">
+					Stay tuned on Twitter
+				</a>
+			</div>
+			<p class="copy">Copyright © 2021, The Beverly Hills Car Club, All rights reserved.</p>
+			<a href="mailto:team@beverlyhillscarclub.io" class="link">team@beverlyhillscarclub.io</a>
+		</div>
+	</div>
+
+	<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+	<script type='text/javascript'>
+		(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);
+	</script>
+</body>
+</html>
